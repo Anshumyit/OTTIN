@@ -15,14 +15,17 @@ class _CompleteProfileState extends State<CompleteProfile> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         automaticallyImplyLeading: true,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Complate your Profile',style: TextStyle(color: Colors.black,fontSize: 30)),
-          Text('Fill your Personal information here'),
+          Text('Complate your Profile',style: TextStyle(color: Colors.white,fontSize: 30)),
+          SizedBox(height: 10),
+          Text('Fill your Personal information here',style: TextStyle(color: Colors.white),),
 
-          Text("Full Name"),
+          Text("Full Name",style: TextStyle(color: Colors.white)),
           TextField(
             decoration: InputDecoration(
               hintText: "Enter Your Number",
@@ -33,7 +36,7 @@ class _CompleteProfileState extends State<CompleteProfile> {
             ),
           ),
           SizedBox(height: 10),
-          Text("Your Email"),
+          Text("Your Email",style: TextStyle(color: Colors.white)),
           TextField(
             decoration: InputDecoration(
               hintText: "Enter Your Email",
@@ -44,7 +47,7 @@ class _CompleteProfileState extends State<CompleteProfile> {
             ),
           ),
           SizedBox(height: 10),
-          Text("Referral code(option)"),
+          Text("Referral code(option)",style: TextStyle(color: Colors.white)),
           TextField(
             decoration: InputDecoration(
               hintText: "Enter Referral code",
@@ -54,7 +57,7 @@ class _CompleteProfileState extends State<CompleteProfile> {
               prefixIcon: Icon(Icons.card_giftcard),
             ),
           ),
-          Text("Your Language"),
+          Text("Your Language",style: TextStyle(color: Colors.white)),
           TextField(
             decoration: InputDecoration(
               hintText: "Enter Your language",
