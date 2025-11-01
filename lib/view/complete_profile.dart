@@ -20,7 +20,7 @@ class _CompleteProfileState extends State<CompleteProfile> {
       body: Column(
         children: [
           Text('Complate your Profile',style: TextStyle(color: Colors.black,fontSize: 30)),
-          Text('Fill your Personal information here',style: TextStyle(color: Colors.black,fontSize: 30)),
+          Text('Fill your Personal information here'),
 
           Text("Full Name"),
           TextField(
@@ -79,7 +79,7 @@ class _CompleteProfileState extends State<CompleteProfile> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Center(
-                  child: Text("Login", style: TextStyle(color: Colors.white)),
+                  child: Text("Update", style: TextStyle(color: Colors.white)),
                 ),
               ),
             ),

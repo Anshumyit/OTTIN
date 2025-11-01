@@ -58,13 +58,12 @@ class _OTTScreenState extends State<OTTScreen> {
                   color: HexColor('#FC0000'),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Center(
-                  child: Row(
-                    children: [
-                      Text("Complate", style: TextStyle(color: Colors.white)),
-                      Icon(Icons.check)
-                    ],
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Complate", style: TextStyle(color: Colors.white)),
+                    Icon(Icons.check)
+                  ],
                 ),
               ),
             ),
